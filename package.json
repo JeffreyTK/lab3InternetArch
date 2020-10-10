@@ -1,0 +1,20 @@
+{
+  "name": "internetarch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffreyTK/lab3InternetArch.git"
+  },
+  "author": "jeff and kris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffreyTK/lab3InternetArch/issues"
+  },
+  "homepage": "https://github.com/JeffreyTK/lab3InternetArch#readme"
+}

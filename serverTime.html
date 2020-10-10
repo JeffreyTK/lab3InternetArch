@@ -1,0 +1,28 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03</title>
+    <script>
+        function myFunc() {
+        let xhttp = new XMLHttpRequest();
+        let str = document.getElementById('name').value
+        console.log(str);
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.querySelector('html').innerHTML = this.response
+            }
+        };
+        xhttp.open("GET", "http://localhost:8888/?name=" + str, true);
+        xhttp.send();
+    }
+    </script>
+</head>
+<body>
+    <div id="mainbody">
+        First Name: <input type="text" id="name" name="name"><br><br>
+        <button type="button" onclick="myFunc()">submit</button>
+    </div>
+</body>
+</html>
